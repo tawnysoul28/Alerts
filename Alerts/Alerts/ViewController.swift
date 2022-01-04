@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         enum Films: String {
             case film1 = "Venom"
             case film2 = "Aladin"
-            case film3 = "Catfish"
+            case film3 = "SpiderMan"
         }
         
         let alert = UIAlertController(title: nil, message: "Choose Film", preferredStyle: .actionSheet)
@@ -41,7 +41,6 @@ class ViewController: UIViewController {
                 print(type.rawValue)
             }
         }
-        
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
