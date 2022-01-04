@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         enum Films: String {
             case film1 = "Venom"
             case film2 = "Aladin"
+            case film3 = "SpiderMan"
         }
         
         let alert = UIAlertController(title: nil, message: "Choose Film", preferredStyle: .actionSheet)
@@ -41,7 +42,6 @@ class ViewController: UIViewController {
             }
         }
         
-        
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         
@@ -50,6 +50,9 @@ class ViewController: UIViewController {
         
         let film2 = UIAlertAction(title: Films.film2.rawValue, style: .default, handler: handler(.film2))
         alert.addAction(film2)
+        
+        let film3 = UIAlertAction(title: Films.film3.rawValue, style: .default, handler: handler(.film3))
+        alert.addAction(film3)
         
         present(alert, animated: true, completion: nil)
     }
